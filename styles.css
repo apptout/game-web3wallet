@@ -56,6 +56,15 @@
 #response-button.active {
   opacity: 1;
   visibility: visible;
+  background-color: #a7ff00;
+  border: 1px solid #A7FF00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 100px;
+  margin: 10px;
+  margin-top: 21px;
+  height: 45px;
+  width: 300px;
 }
 
 #response-button:hover {
