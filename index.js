@@ -14,7 +14,7 @@ async function loadApp() {
   await provider.send("eth_requestAccounts", []);
   processAction();
 }
-//test
+
 function processAction() {
   const urlParams = new URLSearchParams(window.location.search);
   const action = urlParams.get("action");
