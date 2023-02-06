@@ -57,7 +57,7 @@ async function sendTransaction(chainId, to, value, gasLimit, gasPrice, data) {
       data: data ? data : "0x",
     });
     console.log({ tx });
-    displayResponse("Transaction sent.<br><br>Tap here to copy to clipboard (required). Then go back to WenBid.", tx.hash);
+    displayResponse("Transaction sent.<br><br>Copy to clipboard then continue to WenBid app.", tx.hash);
   } catch (error) {
     copyToClipboard("error");
     displayResponse("Transaction Denied");
@@ -69,7 +69,7 @@ async function signMessage(message) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     const signature = await signer.signMessage(message);
     console.log({ signature });
-    displayResponse("Signature complete.<br><br>Tap here to copy to clipboard (required). Then go back to WenBid.", signature);
+    displayResponse("Signature complete.<br><br>Copy to clipboard then continue to WenBid app.", signature);
   } catch (error) {
     copyToClipboard("error");
     displayResponse("Signature Denied");
@@ -84,7 +84,7 @@ async function copyToClipboard(response) {
     await new Promise((resolve) => setTimeout(resolve, 500));
     // copy tx hash to clipboard
     await navigator.clipboard.writeText(response);
-    document.getElementById("response-button").innerHTML = "Copied";
+    document.getElementById("response-button").innerHTML = "Copied. Please return to WenBid.";
   } catch {
     // for metamask mobile android
     const input = document.createElement("input");
@@ -92,9 +92,9 @@ async function copyToClipboard(response) {
     input.value = response;
     document.body.appendChild(input);
     input.select();
-    document.execCommand("Copy");
+    document.execCommand("Tap here to copy to clipbboard (required)");
     input.style = "visibility: hidden";
-    document.getElementById("response-button").innerHTML = "Copied";
+    document.getElementById("response-button").innerHTML = "Copied. Please return to WenBid.";
   }
 }
 
