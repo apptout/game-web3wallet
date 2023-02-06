@@ -4,7 +4,7 @@ import { parseUnits, hexlify } from "ethers/lib/utils";
 
 let provider;
 let signer;
-//test
+
 document.addEventListener("DOMContentLoaded", loadApp());
 
 async function loadApp() {
