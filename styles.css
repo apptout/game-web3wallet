@@ -27,11 +27,13 @@
 #response-text {
   transition-duration: 200ms;
   opacity: 0;
+  color: #fff;
   visibility: hidden;
 }
 
 #response-text.active {
   opacity: 1;
+  color: #fff;
   visibility: visible;
 }
 
@@ -41,14 +43,14 @@
   opacity: 0;
   visibility: hidden;
   background-color: white;
-  border: 1px solid #037dd6;
+  border: 1px solid #A7FF00;
   font-weight: bold;
-  color: #037dd6;
+  color: #A7FF00;
   border-radius: 100px;
   margin: 10px;
   margin-top: 21px;
   height: 45px;
-  width: 170px;
+  width: 300px;
 }
 
 #response-button.active {

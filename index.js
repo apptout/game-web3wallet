@@ -84,7 +84,7 @@ async function copyToClipboard(response) {
     await new Promise((resolve) => setTimeout(resolve, 500));
     // copy tx hash to clipboard
     await navigator.clipboard.writeText(response);
-    document.getElementById("response-button").innerHTML = "Copied. Please return to WenBid.";
+    document.getElementById("response-button").innerHTML = "Copied.<br>Please return to WenBid.";
   } catch {
     // for metamask mobile android
     const input = document.createElement("input");
