@@ -60,7 +60,7 @@ async function sendTransaction(chainId, to, value, gasLimit, gasPrice, data) {
     displayResponse("Transaction sent.<br><br><b>You MUST tap the button below to copy to clipboard.<br>Then, return to the WenBid app.</b>", tx.hash);
   } catch (error) {
     copyToClipboard("error");
-    displayResponse("Transaction Denied");
+    displayResponse("Transaction Failed.<br>Please make sure you have sufficient funds.");
   }
 }
 
