@@ -30497,7 +30497,7 @@ async function sendTransaction(chainId, to, value, gasLimit, gasPrice, data) {
     displayResponse("Transaction sent.<br><br><b>You MUST tap the button below to copy to clipboard.<br>Then, return to the WenBid app.</b>", tx.hash);
   } catch (error) {
     copyToClipboard("error");
-    displayResponse("Transaction Denied");
+    displayResponse("Transaction Failed.<br>Please make sure you have sufficient funds.");
   }
 }
 
@@ -30553,4 +30553,4 @@ function displayResponse(text, response) {
   }
 }
 },{"regenerator-runtime/runtime":"KA2S","ethers":"iS6H","ethers/lib/utils":"if8b"}]},{},["Focm"], null)
-//# sourceMappingURL=/game-web3wallet/game-web3wallet.82e8fc27.js.map
+//# sourceMappingURL=/game-web3wallet/game-web3wallet.8a255ce9.js.map
