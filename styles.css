@@ -42,10 +42,10 @@
   transition-duration: 200ms;
   opacity: 0;
   visibility: hidden;
-  background-color: white;
+  background-color: #a7ff00;
   border: 1px solid #A7FF00;
   font-weight: bold;
-  color: #A7FF00;
+  color: #000;
   border-radius: 100px;
   margin: 10px;
   margin-top: 21px;
