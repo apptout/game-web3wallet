@@ -30443,7 +30443,8 @@ async function loadApp() {
   if (!signer) window.location.reload();
   await provider.send("eth_requestAccounts", []);
   processAction();
-}
+} //test
+
 
 function processAction() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -30552,4 +30553,4 @@ function displayResponse(text, response) {
   }
 }
 },{"regenerator-runtime/runtime":"KA2S","ethers":"iS6H","ethers/lib/utils":"if8b"}]},{},["Focm"], null)
-//# sourceMappingURL=/game-web3wallet/game-web3wallet.d0860a5b.js.map
+//# sourceMappingURL=/game-web3wallet/game-web3wallet.dbcc8ff1.js.map
