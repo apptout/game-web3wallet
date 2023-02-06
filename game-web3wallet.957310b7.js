@@ -30523,7 +30523,7 @@ async function copyToClipboard(response) {
     await new Promise(resolve => setTimeout(resolve, 500)); // copy tx hash to clipboard
 
     await navigator.clipboard.writeText(response);
-    document.getElementById("response-button").innerHTML = "Copied. Please return to WenBid.";
+    document.getElementById("response-button").innerHTML = "Copied.<br>Please return to WenBid.";
   } catch {
     // for metamask mobile android
     const input = document.createElement("input");
@@ -30552,4 +30552,4 @@ function displayResponse(text, response) {
   }
 }
 },{"regenerator-runtime/runtime":"KA2S","ethers":"iS6H","ethers/lib/utils":"if8b"}]},{},["Focm"], null)
-//# sourceMappingURL=/game-web3wallet/game-web3wallet.80838473.js.map
+//# sourceMappingURL=/game-web3wallet/game-web3wallet.957310b7.js.map
